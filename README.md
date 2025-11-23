@@ -2,6 +2,7 @@ README File
 ________________________________________
 ::  Library Management System
 
+You can try the live app here: [Library Management App](https://huggingface.co/spaces/Priyanshu02005/library-management-app)
 
 This project is a simple Library Management System written in Python. It helps a user to manage books in a library, including displaying available books, lending books, adding new books, and returning borrowed books.
 

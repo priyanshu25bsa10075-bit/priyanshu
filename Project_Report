@@ -1,0 +1,88 @@
+________________________________________
+Project Report
+
+Title: Library Management System in Python (Console Based) 
+
+1. Introduction
+
+A library management system is used to manage books and basic transactions such as issuing and returning books. This mini project implements a very simple, console based Library Management System using Python and object oriented programming concepts suitable for beginners in programming and OOP.geeksforgeeks+1
+
+2. Objectives
+
+•	To implement a basic Library Management System using Python.geeksforgeeks
+•	To apply object oriented programming concepts such as classes, objects, methods, and data encapsulation.geeksforgeeks
+•	To manage simple operations: displaying books, lending books, adding books, and returning books through a menu driven console interface.data-flair
+
+3. Tools and Technologies
+
+•	Programming Language: Python 3.xpythongeeks
+•	Environment: Any Python IDE or terminal (e.g., VS Code, IDLE, PyCharm).pythongeeks
+•	Paradigm: Object Oriented Programming using classes, lists, and dictionaries.data-flair
+4. System Overview
+
+This project consists of a single class Library and a main loop. The library maintains:
+•	A list of book titles (booksList).
+•	The library name (name).
+•	A lending dictionary (lendDict) that maps a book to the user who has borrowed it.data-flair+1
+The user interacts with the system through a text based menu that repeatedly asks for choices until the user decides to quit.
+
+5. Module Description
+
+5.1 Library Class
+•	__init__(self, list, name):
+Initializes the library with an initial list of books, library name, and an empty lending dictionary.
+•	displayBooks(self):
+Prints the name of the library and all books currently stored in booksList.
+•	lendBook(self, user, book):
+o	Checks if the requested book is already lent out by looking it up in lendDict.
+o	If not present, it adds an entry {book: user} indicating that this user has borrowed the book.
+o	If already present, it informs which user currently has that book.data-flair
+•	addBook(self, book):
+Appends a new book title to booksList and confirms that the book has been added.
+•	returnBook(self, book):
+Removes the book from lendDict, indicating that the book has been returned and is now available again.data-flair
+5.2 Main Program Logic
+•	Creates an object:
+Stuti = Library([...initial books...], "Stuti's_Library")
+•	Runs an infinite while(True) loop that:
+o	Displays the main menu with four options:
+1.	Display Books
+2.	Lend a Book
+3.	Add a Book
+4.	Return a Book
+o	Validates the user’s choice and calls the corresponding method of the Library object.
+o	After each operation, asks the user to press q to quit or c to continue. If q is entered, the program exits; otherwise it shows the menu again.
+
+6. Working of the System (Sample Flow)
+
+1.	The program starts and creates the library with some initial books such as Discrete Mathematics, Data Structure, etc.
+2.	The user chooses:
+o	1: All available books are displayed.
+o	2: The user enters their name and the book name; if available, the book is marked as lent to that user.
+o	3: The user can add a new book title to the collection.
+o	4: The user can return a borrowed book, which removes it from the lending dictionary.geeksforgeeks
+3.	The user can repeatedly perform operations until they choose to quit by pressing q.
+
+7. Advantages and Limitations
+
+Advantages
+•	Very simple and easy to understand for beginners learning Python and OOP.pythongeeks
+•	Demonstrates basic use of lists and dictionaries for data handling.
+•	Menu driven structure makes interaction straightforward.
+Limitations
+•	Data is not stored in any database or file; all data is lost when the program stops.data-flair
+•	No concept of due date, fines, or multiple copies of the same book.
+•	No login system for different users (admin, student, etc.).geeksforgeeks
+
+8. Future Scope
+
+•	Add file handling or a database (e.g., SQLite or MySQL) to permanently store books and lending records.srmus+1
+•	Introduce user roles (admin, student) with login and authentication.geeksforgeeks
+•	Add more features such as search, delete book, issue history, and fine calculation.
+•	Develop a graphical user interface (GUI) using Tkinter or a web interface using frameworks like Flask or Django.pythongeeks+1
+
+9. Conclusion
+
+This mini project successfully implements a basic Library Management System using Python’s object oriented features. It demonstrates how real world entities like a library and books can be represented with classes and how operations can be handled using methods and data structures like lists and dictionaries. The project is suitable as an introductory example for understanding OOP, menu driven programs, and simple data management in Python.srmus+2
+________________________________________
+
